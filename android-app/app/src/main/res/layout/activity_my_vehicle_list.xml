@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:forceDarkAllowed="false"
+    tools:context=".Users.MyDriverList">
+    <include layout="@layout/toolbar1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search by License Number"
+            android:textColorHint="#878888"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp"
+            android:visibility="gone"
+            android:id="@+id/search"
+            android:drawableTint="@color/colorAccent"
+            android:drawableLeft="@drawable/search"
+
+            />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/pb"
+            android:visibility="gone"
+
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/VehiclerecyclerView"
+
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

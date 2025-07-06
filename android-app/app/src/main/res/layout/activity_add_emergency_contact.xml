@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Users.AddEmergencyCOntact">
+    <include layout="@layout/toolbar1"/>
+    <EditText
+        android:id="@+id/emergencyNameEt"
+        style="@style/editTextStyle"
+        android:hint="Enter Name"
+        android:drawableTint="#097A8A"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorBlack"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/emergencyPhoneEt"
+        style="@style/editTextStyle"
+        android:hint="Enter Phone"
+        android:drawableTint="#097A8A"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorBlack"
+        android:inputType="number" />
+    <Button
+        android:id="@+id/buttton_login"
+        style="@style/button_style"
+        android:onClick="uploadBtn"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:text="Upload" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:text="Emergency Number"
+       />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emergecnyContactRv"/>
+    </LinearLayout>
+</LinearLayout>

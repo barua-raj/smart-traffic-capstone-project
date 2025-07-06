@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:forceDarkAllowed="false"
+    tools:context=".TraficPolicePanel.CheckDues">
+    <include layout="@layout/toolbar1" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="7dp"
+                android:layout_marginTop="10dp"
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle Details"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Registration Number: "
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="#4CAF50"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:id="@+id/reg"
+
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CC: "
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:id="@+id/cc"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ownership Type: "
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="#4CAF50"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:id="@+id/ownership"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tax Token Expiration Date: "
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/taxtoken"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fitness Expiration Date: "
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+                        android:id="@+id/fitness"
+
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Route Permit Expiration Date: "
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+                        android:id="@+id/routepermit"
+
+
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="10dp"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="All Dues Fee's Details"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+
+                    >
+                    <TableLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+
+                        >
+
+                    <TableRow
+                        android:id="@+id/title_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:textAlignment="center"
+
+                        >
+
+                        <TextView
+
+                            android:layout_weight="11111111166"
+                            android:padding="5dp"
+                            android:text="Rule          "
+                            android:textAlignment="center"
+                            android:textSize="8dp"
+                            android:textStyle="bold"
+
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="#000000"
+                            android:background="@drawable/textviewlayout"
+                            />
+
+                        <TextView
+
+                            android:layout_weight="1"
+                            android:text="   Main Fees"
+                            android:padding="5dp"
+
+                            android:textSize="8dp"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:background="@drawable/textviewlayout"
+                            android:fontFamily="sans-serif-medium"/>
+
+
+                        <TextView
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:text="Inspection"
+                            android:textAlignment="center"
+                            android:textSize="8dp"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:background="@drawable/textviewlayout"
+                            android:fontFamily="sans-serif-medium"/>
+                        <TextView
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:text="Label"
+                            android:textAlignment="center"
+                            android:textSize="8dp"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="#000000"
+                            android:background="@drawable/textviewlayout"
+                            />
+
+                        <TextView
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:text="Application fee"
+                            android:textAlignment="center"
+                            android:textSize="8dp"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:background="@drawable/textviewlayout"
+                            android:fontFamily="sans-serif-medium"/>
+                        <TextView
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:text="Delay"
+                            android:textAlignment="center"
+                            android:textSize="8dp"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="#000000"
+                            android:background="@drawable/textviewlayout"
+                            />
+
+
+                        <TextView
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:text="VAT"
+                            android:textAlignment="center"
+                            android:textSize="8dp"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="#000000"
+                            android:background="@drawable/textviewlayout"
+                            />
+
+                        <TextView
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:text="Total"
+                            android:textAlignment="center"
+                            android:textSize="8dp"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:background="@drawable/textviewlayout"
+                            android:fontFamily="sans-serif-medium"/>
+                    </TableRow>
+
+                    </TableLayout>
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pb"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/nodata"
+                        android:text="No dues for this vehicle"
+                        android:textSize="15dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#737375"
+                        android:visibility="gone"
+
+                        />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/recyclerView"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

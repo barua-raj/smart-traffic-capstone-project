@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/colorWhite"
+    android:forceDarkAllowed="false"
+    android:orientation="vertical"
+    tools:context=".PayViaBkash">
+    <include layout="@layout/toolbar1"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bkash Payment"
+                android:textSize="20dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:textAlignment="center"
+
+
+                />
+            <androidx.cardview.widget.CardView
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                app:cardCornerRadius="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/blogo"
+
+
+
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="20dp"
+
+                />
+
+
+
+
+        <EditText
+            android:id="@+id/phoneEdit"
+            style="@style/editTextStyle"
+            android:hint="Phone"
+            android:drawableLeft="@drawable/person"
+            android:drawableTint="#097A8A"
+            android:textColor="@color/colorBlack"
+
+            android:textColorHint="@color/colorBlack"
+            android:inputType="number" />
+
+
+        <EditText
+            android:id="@+id/pinEdit"
+            style="@style/editTextStyle"
+            android:hint="Pin"
+            android:drawableLeft="@drawable/lock"
+            android:drawableTint="#097A8A"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:inputType="textPassword" />
+            <EditText
+                android:id="@+id/payment"
+                style="@style/editTextStyle"
+                android:hint="Payment"
+    android:editable="false"
+                android:drawableTint="#097A8A"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+              />
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pb"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                />
+            <Button
+                android:id="@+id/buttton_login"
+                style="@style/button_style"
+                android:onClick="Pay"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:text="Pay" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

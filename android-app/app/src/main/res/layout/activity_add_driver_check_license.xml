@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:forceDarkAllowed="false"
+    tools:context=".Users.AddDriverCheckLicense">
+    <include layout="@layout/toolbar1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        >
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:lottie_autoPlay="true"
+            app:lottie_cacheComposition="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/nid"
+            android:layout_gravity="center"
+            app:lottie_speed="1"
+
+
+            android:visibility="visible"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorAccent"
+            android:textStyle="normal"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:hint="Enter your NID Number ex. 60040234"
+            android:inputType="number"
+            android:id="@+id/nid"
+
+
+            />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/pb"
+            android:visibility="gone"
+
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:text="Submit"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:onClick="next"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:forceDarkAllowed="false"
+    tools:context=".Users.AddDriverMyVehicle">
+    <include layout="@layout/toolbar1"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+
+            >
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/pb"
+                android:visibility="gone"
+
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/rest"
+                android:visibility="gone"
+
+
+
+
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="195dp"
+                    android:layout_height="195dp"
+                    app:cardCornerRadius="190dp"
+                    android:layout_gravity="center"
+
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView"
+
+
+
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="10dp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Owner Name: "
+
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:id="@+id/name"
+
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date of Birth: "
+
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:id="@+id/dob"
+
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NID No: "
+
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:id="@+id/nidtext"
+
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:padding="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address: "
+
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:id="@+id/address"
+
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blood Group: "
+
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:id="@+id/blood_group"
+
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="License No: "
+
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:id="@+id/license"
+
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Issue Authority: "
+
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:id="@+id/issue"
+
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+
+                        />
+
+                </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Check Previous History"
+                    android:textColor="@color/colorWhite"
+                    android:backgroundTint="@color/colorAccent"
+                    android:onClick="checkhistory"
+
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:text="Add My Vehicle"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle list"
+
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp"
+
+                    />
+
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Vehicle Number "
+                    android:textColorHint="#B0B0B3"
+                    android:backgroundTint="@color/colorAccent"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:id="@+id/vehicle_numberSp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter IMage"
+                    android:textColorHint="#B0B0B3"
+                    android:backgroundTint="@color/colorAccent"
+                    android:layout_marginTop="10dp"
+                    android:inputType="none"
+                    android:visibility="gone"
+                    android:id="@+id/imageET"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Location"
+                    android:textColorHint="#B0B0B3"
+                    android:backgroundTint="@color/colorAccent"
+                    android:layout_marginTop="10dp"
+                    android:inputType="none"
+                    android:id="@+id/locaationET"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Phone"
+                    android:textColorHint="#B0B0B3"
+                    android:backgroundTint="@color/colorAccent"
+                    android:layout_marginTop="10dp"
+                    android:inputType="none"
+                    android:id="@+id/phoneET"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:text="Submit"
+                    android:onClick="register"
+                    android:backgroundTint="@color/colorAccent"
+
+
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/colorWhite"
+
+
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

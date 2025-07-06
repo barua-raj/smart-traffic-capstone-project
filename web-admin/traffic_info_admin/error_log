@@ -1,0 +1,17 @@
+[25-May-2022 10:53:50 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/freightmanagemen/public_html/OnlineSRMgt/student_registration.php:98
+Stack trace:
+#0 {main}
+  thrown in /home/freightmanagemen/public_html/OnlineSRMgt/student_registration.php on line 98
+[25-May-2022 10:56:54 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/freightmanagemen/public_html/OnlineSRMgt/student_registration.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/freightmanagemen/public_html/OnlineSRMgt/student_registration.php on line 21
+[25-May-2022 16:27:26 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/freightmanagemen/public_html/OnlineSRMgt/checkpostdetails.php on line 4
+[25-May-2022 16:27:41 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/freightmanagemen/public_html/OnlineSRMgt/checkpostdetails.php on line 4
+[25-May-2022 16:59:40 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/freightmanagemen/public_html/OnlineSRMgt/checkpostdetails.php on line 4
+[27-May-2022 05:51:00 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/freightmanagemen/public_html/OnlineSRMgt/checkpostdetails.php on line 4
+[27-May-2022 08:51:40 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/freightmanagemen/public_html/OnlineSRMgt/checkpostdetails.php on line 4
+[27-May-2022 08:55:02 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/freightmanagemen/public_html/OnlineSRMgt/checkpostdetails.php on line 4
+[27-May-2022 08:57:08 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/freightmanagemen/public_html/OnlineSRMgt/checkpostdetails.php on line 4
+[27-May-2022 08:57:40 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/freightmanagemen/public_html/OnlineSRMgt/checkpostdetails.php on line 4
+[27-May-2022 14:26:10 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/freightmanagemen/public_html/OnlineSRMgt/checkpostdetails.php on line 4

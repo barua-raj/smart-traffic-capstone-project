@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thesis.trafficinfo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TrafficInfo"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".TestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmPayment"
+            android:exported="false" />
+        <activity
+            android:name=".PayViaBkash"
+            android:exported="false" />
+        <activity
+            android:name=".DriverViewVehicleDetaisl"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BothActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WriteVehicleRegistrationID"
+            android:exported="false" />
+        <activity
+            android:name=".WriteNationalIDCard"
+            android:exported="false" />
+        <activity
+            android:name=".Users.MyCaseHistory"
+            android:exported="false" />
+        <activity
+            android:name=".Users.MyDrivedVehicles"
+            android:exported="false" />
+        <activity
+            android:name=".Users.AcceptorRejectRequest"
+            android:exported="false" />
+        <activity
+            android:name=".Users.CheckDrivingRequest"
+            android:exported="false" />
+        <activity
+            android:name=".Users.DriverActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Users.AddEmergencyCOntact"
+            android:exported="false" />
+        <activity
+            android:name=".Users.DetailsOfVehicles"
+            android:exported="false" />
+        <activity
+            android:name=".Users.CheckVehiclePunishmentDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Users.GetVehiclePreviousHistory"
+            android:exported="false" />
+        <activity
+            android:name=".Users.CheckMyVehicleDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Users.CheckMyDriverHistory"
+            android:exported="false" />
+        <activity
+            android:name=".Users.MyVehicleList"
+            android:exported="false" />
+        <activity
+            android:name=".Users.MyDriverList"
+            android:exported="false" />
+        <activity
+            android:name=".Users.GetDriverInfo"
+            android:exported="false" />
+        <activity
+            android:name=".Users.AddDriverMyVehicle"
+            android:exported="false" />
+        <activity
+            android:name=".Users.CheckDriverLicense"
+            android:exported="false" />
+        <activity
+            android:name=".WriteVehicleNumber"
+            android:exported="false" />
+        <activity
+            android:name=".Users.AddDriver"
+            android:exported="false" />
+        <activity
+            android:name=".Users.CheckDriverInfo"
+            android:exported="false" />
+        <activity
+            android:name=".Users.AddDriverCheckLicense"
+            android:exported="false" />
+        <activity
+            android:name=".Users.UserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TraficPolicePanel.WriteNID"
+            android:exported="false" />
+        <activity
+            android:name=".TraficPolicePanel.CaseHistory2"
+            android:exported="false" />
+        <activity
+            android:name=".TraficPolicePanel.TrafficRules"
+            android:exported="false" />
+        <activity
+            android:name=".TraficPolicePanel.vehicle_details"
+            android:exported="false" />
+        <activity
+            android:name=".TraficPolicePanel.NID_Details"
+            android:exported="false" />
+        <activity
+            android:name=".TraficPolicePanel.FindByNID"
+            android:exported="false" />
+        <activity
+            android:name=".TraficPolicePanel.Case_Details"
+            android:exported="false" />
+        <activity
+            android:name=".TraficPolicePanel.CaseHistory"
+            android:exported="false" />
+        <activity
+            android:name=".TraficPolicePanel.CheckDues"
+            android:exported="false" />
+        <activity
+            android:name=".TraficPolicePanel.FindByVehicle"
+            android:exported="false" />
+        <activity
+            android:name=".TraficPolicePanel.CaseByVehicle"
+            android:exported="false" />
+        <activity
+            android:name=".TraficPolicePanel.CaseByLicense"
+            android:exported="false" />
+        <activity
+            android:name=".TraficPolicePanel.FindByLicense"
+            android:exported="false" />
+        <activity
+            android:name=".LoginAndSignUp.Select_Role"
+            android:exported="false" />
+        <activity
+            android:name=".LoginAndSignUp.personalInfo"
+            android:exported="false" />
+        <activity android:name=".LoginAndSignUp.NID" />
+        <activity
+            android:name=".TraficPolicePanel.PoliceDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".LoginAndSignUp.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

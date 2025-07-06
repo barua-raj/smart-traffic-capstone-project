@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:forceDarkAllowed="false"
+    tools:context=".TraficPolicePanel.CaseByLicense">
+    <include layout="@layout/toolbar1"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+
+            >
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/pb"
+            android:visibility="gone"
+
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/rest"
+            android:visibility="gone"
+
+
+
+
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="195dp"
+                android:layout_height="195dp"
+                app:cardCornerRadius="190dp"
+                android:layout_gravity="center"
+
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView"
+
+
+
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="10dp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Owner Name: "
+
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:id="@+id/name"
+
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Birth: "
+
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:id="@+id/dob"
+
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NID No: "
+
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:id="@+id/nidtext"
+
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address: "
+
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:id="@+id/address"
+
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Group: "
+
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/blood_group"
+
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emergency Contact: "
+
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/emergency_contact"
+
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="License Expiry Date: "
+
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/ref_expiry_dateTv"
+
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:padding="10dp"
+                android:id="@+id/licenseLinearLayout"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="License No: "
+
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:id="@+id/license"
+
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:id="@+id/vehiclLinearLayout"
+                android:visibility="gone"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle Reg. No: "
+
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:id="@+id/vehicleRegNoTV"
+
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Issue Authority: "
+
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:id="@+id/issue"
+
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp"
+
+                    />
+
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check Previous History"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorAccent"
+                android:onClick="checkhistory"
+
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:text="Register a New Case"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:text="Click here to see the Traffic Rules of Bangladesh"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:id="@+id/law"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:text="Address"
+                android:layout_marginTop="10dp"
+
+                />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="40dp"
+                android:background="#DFDEDE"
+                android:id="@+id/addressSpinner"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:text="Select Applicant type"
+                android:layout_marginTop="10dp"
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="40dp"
+                android:background="#DFDEDE"
+                android:editable="false"
+                android:id="@+id/applicantTypeET"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:text="Select Crime Type"
+                android:layout_marginTop="10dp"
+
+                />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="40dp"
+                android:background="#DFDEDE"
+                android:id="@+id/spinner"
+                android:visibility="gone"
+                />
+            <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/spinnercrime"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="50dp"
+                android:background="#DFDEDE"
+                app:smsp_alwaysShowFloatingLabel="false"
+                app:smsp_floatingLabelColor="@color/colorBlack"
+                app:smsp_enableSearchHeader="false"
+                app:smsp_hint="--Select Crime Type--"
+                app:smsp_hintColor="#090909"
+                app:smsp_itemColor="@color/colorBlack"
+                app:smsp_isSearchable="true"
+                app:smsp_floatingLabelText=""
+                app:smsp_searchHint="Search..."
+                app:smsp_searchHintColor="@color/colorBlack"
+                app:smsp_searchTextColor="@color/colorBlack"
+                app:smsp_searchBackgroundColor="@color/colorWhite"
+                app:smsp_searchHeaderBackgroundColor="@color/colorWhite"
+
+                app:smsp_itemListColor="@color/colorAccent"
+                app:smsp_itemListHintBackgroundColor="#DFDEDE"
+                app:smsp_itemListHintColor="#DFDEDE"
+                app:smsp_multilineError="false"
+                app:smsp_selectedItemListColor="@color/colorAccent" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:text="Select Imprisonment"
+                android:layout_marginTop="10dp"
+
+                />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="40dp"
+                android:background="#DFDEDE"
+                android:id="@+id/spinner1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:text="Select Vehicle Type"
+                android:layout_marginTop="10dp"
+
+                />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="40dp"
+                android:background="#DFDEDE"
+                android:id="@+id/spinner2"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:text="Select Fine type"
+                android:layout_marginTop="10dp"
+
+                />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="40dp"
+                android:background="#DFDEDE"
+                android:id="@+id/spinner3"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Vehicle Number "
+                android:textColorHint="#B0B0B3"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:id="@+id/vehicle_number"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Occurrence Time"
+                android:textColorHint="#B0B0B3"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:id="@+id/case_timeEt"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Case Location"
+                android:textColorHint="#B0B0B3"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:id="@+id/case_LocEt"
+                />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColorHint="#B0B0B3"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:id="@+id/seized_documentSp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last date of Appearance"
+                android:textColorHint="#B0B0B3"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:id="@+id/appearanceDateEt"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Fine amount"
+                android:textColorHint="#B0B0B3"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_marginTop="10dp"
+                android:inputType="none"
+                android:editable="false"
+                android:id="@+id/fine_amount"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Feedback (optional)"
+                android:textColorHint="#B0B0B3"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_marginTop="10dp"
+                android:inputType="textLongMessage"
+                android:lines="4"
+                android:id="@+id/feedback"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="userPhone"
+                android:textColorHint="#B0B0B3"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_marginTop="10dp"
+                android:inputType="textLongMessage"
+                android:lines="4"
+                android:id="@+id/UserPhoneET"
+                />
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pb1"
+                android:layout_gravity="center"
+                android:visibility="gone"
+
+
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:text="Register this Case"
+                android:onClick="register"
+                android:backgroundTint="@color/colorAccent"
+
+
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/colorWhite"
+
+
+                />
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

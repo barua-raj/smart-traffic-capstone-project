@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:id="@+id/emergencyC"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp"
+            android:layout_weight="5"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Name"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp"
+            android:id="@+id/contactNameTv"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Phone:"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp"
+            android:layout_weight="5"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textSize="14dp"
+            android:textColor="@color/colorBlack"
+            android:text="Name"
+            android:id="@+id/contacPhoneTv"/>
+    </LinearLayout>
+
+
+</LinearLayout>

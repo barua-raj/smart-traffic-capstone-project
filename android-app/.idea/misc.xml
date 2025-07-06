@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/drawable-v24/back.xml" value="0.1855" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/drawable-v24/lock.xml" value="0.1" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/drawable-v24/person.xml" value="0.1" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/drawable-v24/police.xml" value="0.1" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/drawable/car.xml" value="0.1" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/drawable/search.xml" value="0.1" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/drawable/textviewlayout.xml" value="0.1" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/drawable/verified.xml" value="0.1" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_acceptor_reject_request.xml" value="0.12" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_add_driver.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_add_driver_check_license.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_add_driver_my_vehicle.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_add_emergency_contact.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_both.xml" value="0.16666666666666666" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_case_by_license.xml" value="0.1" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_case_by_vehicle.xml" value="0.12" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_case_details.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_case_history.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_case_history2.xml" value="0.16847826086956522" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_check_driver_info.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_check_driver_license.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_check_driving_request.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_check_my_driver_history.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_check_my_vehicle_details.xml" value="0.1693840579710145" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_check_vehicle_punishment_details.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_confirm_payment.xml" value="0.17346014492753623" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_details_of_vehicles.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_driver.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_driver_view_vehicle_detaisl.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_find_by_license.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_find_by_nid.xml" value="0.17391304347826086" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_find_by_vehicle.xml" value="0.17391304347826086" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_get_driver_info.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_get_vehicle_previous_history.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_my_case_history.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_my_drived_vehicles.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_my_driver_list.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_my_vehicle_list.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_nid.xml" value="0.14130434782608695" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_nid_details.xml" value="0.16666666666666666" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_notification.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_pay_via_bkash.xml" value="0.17346014492753623" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_personal_info.xml" value="0.17391304347826086" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_police_dashboard.xml" value="0.17391304347826086" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_select_role.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_splash_screen.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_test.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_traffic_rules.xml" value="0.17391304347826086" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_user.xml" value="0.3333333333333333" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_vehicle_details.xml" value="0.20282186948853614" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_vehicle_details2.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_write_national_idcard.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_write_nid.xml" value="0.16983695652173914" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/activity_write_vehicle_registration_id.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/drivers_row.xml" value="0.17391304347826086" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/drivingrequestrowview.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/emergency_contact_row.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/fees_row.xml" value="0.17391304347826086" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/history_row.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/laws_row.xml" value="0.17391304347826086" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/nid_row.xml" value="0.17391304347826086" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/notification_row_view.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/owned_vehicle.xml" value="0.17391304347826086" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/toolbar.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/toolbar1.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/vehicle_punishment_row.xml" value="0.1796875" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/layout/vehicle_row.xml" value="0.3333333333333333" />
+        <entry key="..\:/Final Year Project/TrafficInfo2/app/src/main/res/xml/network_security_config.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

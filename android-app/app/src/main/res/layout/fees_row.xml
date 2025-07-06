@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="2dp"
+    >
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+
+        <TableRow
+            android:id="@+id/title_row"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:textAlignment="center"
+
+            >
+
+            <TextView
+
+                android:layout_weight="3"
+                android:padding="5dp"
+                android:text="Rule"
+                android:textAlignment="center"
+                android:textSize="8dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#000000"
+                android:background="@drawable/textviewlayout"
+                android:id="@+id/rule"
+                />
+
+            <TextView
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="8dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:id="@+id/main_fees"
+                android:background="@drawable/textviewlayout"
+                android:fontFamily="sans-serif-medium"/>
+
+
+            <TextView
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="8dp"
+                android:textStyle="bold"
+                android:id="@+id/inspection"
+                android:textColor="#000000"
+                android:background="@drawable/textviewlayout"
+                android:fontFamily="sans-serif-medium"/>
+            <TextView
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="8dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#000000"
+                android:id="@+id/label"
+                android:background="@drawable/textviewlayout"
+                />
+
+            <TextView
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="8dp"
+                android:textStyle="bold"
+                android:id="@+id/applicationfees"
+                android:textColor="#000000"
+                android:background="@drawable/textviewlayout"
+                android:fontFamily="sans-serif-medium"/>
+            <TextView
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="8dp"
+                android:id="@+id/delay"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#000000"
+                android:background="@drawable/textviewlayout"
+                />
+
+
+            <TextView
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:id="@+id/vat"
+                android:textAlignment="center"
+                android:textSize="8dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#000000"
+                android:background="@drawable/textviewlayout"
+                />
+
+            <TextView
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="8dp"
+                android:id="@+id/total"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:background="@drawable/textviewlayout"
+                android:fontFamily="sans-serif-medium"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

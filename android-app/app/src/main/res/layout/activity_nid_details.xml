@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:forceDarkAllowed="false"
+    tools:context=".TraficPolicePanel.NID_Details">
+    <include layout="@layout/toolbar1"/>
+   <androidx.core.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+
+
+       >
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:backgroundTint="@color/colorWhite"
+           android:forceDarkAllowed="false"
+
+
+
+           >
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:padding="10dp"
+               android:background="@color/colorWhite"
+               android:forceDarkAllowed="false"
+
+
+               >
+               <ProgressBar
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:id="@+id/pb"
+                   android:visibility="gone"
+
+
+                   />
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical"
+                   android:id="@+id/rest"
+
+                   android:backgroundTint="@color/colorWhite"
+                   android:forceDarkAllowed="false"
+
+
+                   >
+
+                   <androidx.cardview.widget.CardView
+                       android:layout_width="105dp"
+                       android:layout_height="105dp"
+                       app:cardCornerRadius="60dp"
+                       android:layout_gravity="center"
+
+                       >
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:id="@+id/imageView"
+
+
+
+                           />
+                   </androidx.cardview.widget.CardView>
+
+                   <View
+                       android:layout_width="match_parent"
+                       android:layout_height="1.5dp"
+                       android:background="@android:color/darker_gray"
+                       android:layout_marginTop="20dp"
+
+                       />
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:layout_marginTop="10dp"
+                       android:padding="10dp"
+                       >
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Name: "
+
+                           android:textColor="@color/colorBlack"
+                           android:textSize="15dp"
+
+                           />
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_weight="1"
+                           android:layout_height="wrap_content"
+                           android:text=" "
+                           android:id="@+id/name"
+
+                           android:textColor="@color/colorBlack"
+                           android:textSize="15dp"
+
+                           />
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:padding="10dp"
+
+                       >
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Father's Name: "
+
+                           android:textColor="@color/colorBlack"
+                           android:textSize="15dp"
+
+                           />
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_weight="1"
+                           android:layout_height="wrap_content"
+                           android:text=" "
+                           android:id="@+id/father"
+
+                           android:textColor="@color/colorBlack"
+                           android:textSize="15dp"
+
+                           />
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:padding="10dp"
+
+                       >
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Mother's Name: "
+
+                           android:textColor="@color/colorBlack"
+                           android:textSize="15dp"
+
+                           />
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_weight="1"
+                           android:layout_height="wrap_content"
+                           android:text=" "
+                           android:id="@+id/mother"
+
+                           android:textColor="@color/colorBlack"
+                           android:textSize="15dp"
+
+                           />
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:padding="10dp"
+
+                       >
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Date of Birth: "
+
+                           android:textColor="@color/colorBlack"
+                           android:textSize="15dp"
+
+                           />
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_weight="1"
+                           android:layout_height="wrap_content"
+                           android:text=" "
+                           android:id="@+id/dob"
+
+                           android:textColor="@color/colorBlack"
+                           android:textSize="15dp"
+
+                           />
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:padding="10dp"
+
+                       >
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="NID No: "
+
+                           android:textColor="@color/colorBlack"
+                           android:textSize="15dp"
+
+                           />
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_weight="1"
+                           android:layout_height="wrap_content"
+                           android:text=" "
+                           android:id="@+id/nidtext"
+
+                           android:textColor="@color/colorBlack"
+                           android:textSize="15dp"
+
+                           />
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+
+                       android:padding="10dp"
+                       >
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Address: "
+
+                           android:textColor="@color/colorBlack"
+                           android:textSize="15dp"
+
+                           />
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_weight="1"
+                           android:layout_height="wrap_content"
+                           android:text=" "
+                           android:id="@+id/address"
+
+                           android:textColor="@color/colorBlack"
+                           android:textSize="15dp"
+
+                           />
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:padding="10dp"
+
+                       >
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Blood Group: "
+
+                           android:textColor="@color/colorBlack"
+                           android:textSize="15dp"
+
+                           />
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_weight="1"
+                           android:layout_height="wrap_content"
+                           android:text=""
+                           android:id="@+id/blood_group"
+
+                           android:textColor="@color/colorBlack"
+                           android:textSize="15dp"
+
+                           />
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:padding="10dp"
+
+                       >
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Issue Date: "
+
+                           android:textColor="@color/colorBlack"
+                           android:textSize="15dp"
+
+                           />
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_weight="1"
+                           android:layout_height="wrap_content"
+                           android:text=" "
+                           android:id="@+id/issue"
+
+                           android:textColor="@color/colorBlack"
+                           android:textSize="15dp"
+
+                           />
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:padding="10dp"
+
+                       >
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Place Of Birth: "
+
+                           android:textColor="@color/colorBlack"
+                           android:textSize="15dp"
+
+                           />
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_weight="1"
+                           android:layout_height="wrap_content"
+                           android:text=" "
+                           android:id="@+id/place_of_birth"
+
+                           android:textColor="@color/colorBlack"
+                           android:textSize="15dp"
+
+                           />
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:padding="10dp"
+
+                       >
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Role: "
+
+                           android:textColor="@color/colorBlack"
+                           android:textSize="15dp"
+
+                           />
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_weight="1"
+                           android:layout_height="wrap_content"
+                           android:text=" "
+                           android:id="@+id/roleTv"
+
+                           android:textColor="@color/colorBlack"
+                           android:textSize="15dp"
+
+                           />
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:padding="10dp"
+
+                       >
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Vehicle Registration No: "
+
+                           android:textColor="@color/colorBlack"
+                           android:textSize="15dp"
+
+                           />
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_weight="1"
+                           android:layout_height="wrap_content"
+                           android:text=" "
+                           android:id="@+id/vehicleRegNoTv"
+
+                           android:textColor="@color/colorBlack"
+                           android:textSize="15dp"
+
+                           />
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:padding="10dp"
+
+                       >
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Driver license No: "
+
+                           android:textColor="@color/colorBlack"
+                           android:textSize="15dp"
+
+                           />
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_weight="1"
+                           android:layout_height="wrap_content"
+                           android:text=" "
+                           android:id="@+id/driverLicenseNotv"
+
+                           android:textColor="@color/colorBlack"
+                           android:textSize="15dp"
+
+                           />
+
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:padding="10dp"
+
+                       >
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Emergency Contact: "
+
+                           android:textColor="@color/colorBlack"
+                           android:textSize="15dp"
+
+                           />
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_weight="1"
+                           android:layout_height="wrap_content"
+                           android:text=" "
+                           android:id="@+id/emergency_contact"
+
+                           android:textColor="@color/colorBlack"
+                           android:textSize="15dp"
+
+                           />
+
+
+                   </LinearLayout>
+
+                   <View
+                       android:layout_width="match_parent"
+                       android:layout_height="1.5dp"
+                       android:background="@android:color/darker_gray"
+                       android:layout_marginTop="10dp"
+
+                       />
+                   <Button
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="10dp"
+                       android:backgroundTint="@color/colorAccent"
+                       android:text="Check Previous Cases"
+                       android:textColor="@color/colorWhite"
+                       android:onClick="checkCases"
+
+                       />
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="10dp"
+                       android:textSize="18dp"
+                       android:textColor="@color/colorBlack"
+                       android:textStyle="bold"
+                       android:text="Vehicles Owned By Owner"
+                       android:textAlignment="center"
+
+                       />
+                   <ProgressBar
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/pb1"
+                       android:layout_gravity="center"
+                       android:visibility="gone"
+
+
+                       />
+                   <androidx.recyclerview.widget.RecyclerView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/recyclerView"
+
+                       />
+
+
+
+
+               </LinearLayout>
+           </LinearLayout>
+       </ScrollView>
+   </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

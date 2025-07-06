@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:forceDarkAllowed="false"
+    android:orientation="vertical"
+
+    tools:context=".BothActivity">
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/rest"
+
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="100dp"
+                    android:src="@drawable/police"
+                    android:id="@+id/imageView"
+                    tools:ignore="Suspicious0dp" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="8"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="Name:"
+                            android:textColor="@color/colorBlack"
+                            tools:ignore="Suspicious0dp" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:id="@+id/bothNameTv"
+                            android:textColor="@color/colorBlack"
+                            tools:ignore="Suspicious0dp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="NID:"
+                            android:textColor="@color/colorBlack"
+                            tools:ignore="Suspicious0dp" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:id="@+id/bothNIDTv"
+                            android:textColor="@color/colorBlack"
+                            tools:ignore="Suspicious0dp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="License:"
+                            android:textColor="@color/colorBlack"
+                            tools:ignore="Suspicious0dp" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:id="@+id/bothLicense"
+
+                            android:textColor="@color/colorBlack"
+                            tools:ignore="Suspicious0dp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:textColor="@color/colorBlack"
+                            android:text="Role:"
+                            tools:ignore="Suspicious0dp" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:id="@+id/bothRolesTv"
+                            android:textColor="@color/colorBlack"
+                            tools:ignore="Suspicious0dp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="Blood Group: "
+                            android:textColor="@color/colorBlack"
+                            tools:ignore="Suspicious0dp" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:id="@+id/bothBloodGroupTv"
+                            android:textColor="@color/colorBlack"
+                            tools:ignore="Suspicious0dp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:textColor="@color/colorBlack"
+                            android:text="Date of Birth:"
+                            tools:ignore="Suspicious0dp" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:id="@+id/bothDOBTv"
+                            android:textColor="@color/colorBlack"
+                            tools:ignore="Suspicious0dp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="Address:"
+                            android:textColor="@color/colorBlack"
+                            tools:ignore="Suspicious0dp" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:id="@+id/bothAddressTv"
+                            android:textColor="@color/colorBlack"
+                            tools:ignore="Suspicious0dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="10dp"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+
+                >
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="10dp"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    >
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:textSize="13dp"
+                        android:textColor="@color/colorWhite"
+                        android:text="Add Driver"
+                        android:onClick="license"
+
+
+                        />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:textSize="13dp"
+                        android:textColor="@color/colorWhite"
+                        android:text="List of Driver"
+                        android:onClick="ListofDrivers"
+
+
+                        />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:textSize="13dp"
+                        android:textColor="@color/colorWhite"
+                        android:text="List of Vehicles"
+                        android:onClick="ListofVehicles"
+
+
+                        />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:textSize="13dp"
+                        android:textColor="@color/colorWhite"
+                        android:text="Drived Vehicles"
+                        android:onClick="drivedVehicles"
+                        android:visibility="gone"
+
+
+                        />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:textSize="13dp"
+                        android:visibility="gone"
+                        android:textColor="@color/colorWhite"
+                        android:text="List of Cases"
+                        android:onClick="listOfCases"
+
+
+                        />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:textSize="13dp"
+                        android:textColor="@color/colorWhite"
+                        android:text="Add Emergency Contact"
+                        android:onClick="addEmergencyContact"
+
+
+                        />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:textSize="13dp"
+                        android:textColor="@color/colorWhite"
+                        android:text="Notification"
+                        android:onClick="notification"
+
+
+                        />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:textSize="13dp"
+                        android:textColor="@color/colorWhite"
+                        android:text="View Traffic Rules"
+                        android:onClick="viewTrafficRules"
+
+
+                        />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorWhite"
+                        android:text="log Out"
+                        android:layout_gravity="center"
+                        android:onClick="logout"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

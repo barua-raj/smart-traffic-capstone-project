@@ -1,0 +1,93 @@
+package com.thesis.trafficinfo.Adapters;
+
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.Intent;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.squareup.picasso.Picasso;
+import com.thesis.trafficinfo.Models.vehicles;
+import com.thesis.trafficinfo.R;
+import com.thesis.trafficinfo.TraficPolicePanel.CaseByVehicle;
+import com.thesis.trafficinfo.TraficPolicePanel.vehicle_details;
+
+import java.util.List;
+
+public class owned_vehicle_adapter extends RecyclerView.Adapter<owned_vehicle_adapter.ViewHolder>{
+    List<vehicles> modelList;
+    Context context;
+
+    public owned_vehicle_adapter(List<vehicles> modelList, Context context) {
+        this.modelList = modelList;
+        this.context = context;
+    }
+
+    @NonNull
+    @Override
+    public owned_vehicle_adapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        return new owned_vehicle_adapter.ViewHolder(LayoutInflater.from(parent.getContext()).inflate( R.layout.owned_vehicle,parent,false));
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull owned_vehicle_adapter.ViewHolder holder, @SuppressLint("RecyclerView") int position) {
+        holder.name.setText(modelList.get(position).getOwner_name());
+        holder.license_no.setText(modelList.get(position).getRegistration_No());
+        holder.vehicle_no.setText(modelList.get(position).getVehicle_class());
+        /*String imageurl3 ="192.168.0.145/Trafic_info_new/NID/"+modelList.get(position).getPhoto();
+        Picasso.get().load(imageurl3).into(holder.imageView);*/
+
+        holder.card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent  = new Intent(context, vehicle_details.class);
+                intent.putExtra("nid", modelList.get(position).getNID_No());
+                intent.putExtra("reg", modelList.get(position).getRegistration_No());
+                intent.putExtra("issuer", modelList.get(position).getIssuing_Authority());
+                intent.putExtra("photo", modelList.get(position).getPhoto());
+                intent.putExtra("owner_name", modelList.get(position).getOwner_name());
+                intent.putExtra("v_class", modelList.get(position).getVehicle_class());
+                intent.putExtra("chassis_no", modelList.get(position).getChassis_No());
+                intent.putExtra("engine_no", modelList.get(position).getEngine_No());
+                intent.putExtra("cc", modelList.get(position).getCC());
+                intent.putExtra("color", modelList.get(position).getColor());
+                intent.putExtra("mfgyear", modelList.get(position).getMfg_Year());
+                intent.putExtra("route_permit_certificateno", modelList.get(position).getRoutepermit_certificate_no());
+                intent.putExtra("r_e_d", modelList.get(position).getRoutepermit_expiry_date());
+                intent.putExtra("taxtokenno", modelList.get(position).getTaxtoken_no());
+                intent.putExtra("taxtokenno_ed", modelList.get(position).getTaxperiod_expiry_date());
+                intent.putExtra("fitness", modelList.get(position).getFitness_certificate_no());
+                intent.putExtra("fitness_ed", modelList.get(position).getFitness_certificate_expiry_date());
+                context.startActivity(intent);
+
+            }
+        });
+    }
+
+    @Override
+    public int getItemCount() {
+        return modelList.size();
+    }
+
+    public class ViewHolder extends RecyclerView.ViewHolder {
+        TextView name,phone,license_no,vehicle_no;
+        ImageView imageView;
+        LinearLayout card;
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
+            name = itemView.findViewById(R.id.admin_name);
+            phone =itemView.findViewById(R.id.admin_phone);
+            license_no = itemView.findViewById(R.id.admin_Licence);
+            vehicle_no = itemView.findViewById(R.id.admin_vehicle_no);
+            imageView = itemView.findViewById(R.id.imageView);
+            card = itemView.findViewById(R.id.card);
+        }
+    }
+}
